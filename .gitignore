@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Môi trường và biến bí mật
+.env
+*.env
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Files hệ điều hành
+.DS_Store
+Thumbs.db
