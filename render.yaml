@@ -1,0 +1,10 @@
+services:
+  - type: worker  # Loại dịch vụ là 'worker' cho bot Discord vì nó không cần cổng web.
+    name: discord-color-bot # Tên dịch vụ của bạn trên Render.
+    env: python # Môi trường chạy code.
+    plan: free # Sử dụng gói miễn phí của Render.
+    buildCommand: "pip install -r requirements.txt" # Lệnh cài đặt thư viện.
+    startCommand: "python main.py" # Lệnh để khởi động bot.
+    envVars:
+      - key: DISCORD_TOKEN # Tên biến môi trường cho token.
+        sync: false # Đặt là 'false' để bạn tự nhập giá trị trên trang Render, tăng tính bảo mật.
